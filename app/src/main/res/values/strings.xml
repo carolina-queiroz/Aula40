@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RecursosHumanos</string>
+    <string name="info_text">Esse é o nosso app de cadastro de funcionários. Aqui, vamos cadastrar as informações e calcular o salário do colaborador</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cadastro">Cadastro de Informações</string>
+    <string name="horas_trabalhadas">horas trabalhadas</string>
+    <string name="valor_por_hora">valor por hora</string>
+    <string name="nome_e_sobrenome">Nome e sobrenome</string>
+    <string name="salario_a_receber">Salario a receber</string>
+</resources>

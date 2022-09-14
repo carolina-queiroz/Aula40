@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#A9A9A9"
+    tools:context=".SalarioFragment">
+
+    <TextView
+        android:id="@+id/tvTituloSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salario_a_receber"
+        android:textSize="@dimen/fonte_16"
+        android:layout_margin="@dimen/margem_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/img_avatar"/>
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        android:src="@drawable/avatar"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloSalario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_HorasTrabalhadas"
+        app:layout_constraintEnd_toStartOf="@id/tv_Nome" />
+
+    <TextView
+        android:id="@+id/tv_Nome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/nome_e_sobrenome"
+        android:layout_margin="@dimen/margem_16"
+        android:textSize="@dimen/fonte_12"
+        app:layout_constraintBottom_toBottomOf="@id/img_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_avatar"
+        app:layout_constraintTop_toTopOf="@id/img_avatar" />
+
+    <TextView
+        android:id="@+id/tv_HorasTrabalhadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margem_16"
+        android:layout_marginEnd="@dimen/margem_16"
+        android:text="@string/horas_trabalhadas"
+        android:textSize="@dimen/fonte_12"
+        app:layout_constraintBottom_toTopOf="@id/tv_ValorHora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_avatar"
+        app:layout_goneMarginRight="@dimen/margem_16" />
+
+    <TextView
+        android:id="@+id/tv_ValorHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margem_16"
+        android:text="@string/valor_por_hora"
+        android:textSize="@dimen/fonte_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_HorasTrabalhadas" />
+
+    <TextView
+        android:id="@+id/tv_ValorSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margem_16"
+        android:text="@string/valor_por_hora"
+        android:textSize="@dimen/fonte_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ValorHora"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
