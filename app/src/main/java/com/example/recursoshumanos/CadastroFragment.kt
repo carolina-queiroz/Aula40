@@ -52,6 +52,7 @@ class CadastroFragment : Fragment() {
     }
 
     fun verificarCampos(): Boolean {
+        val context = context as MainActivity
         return if (nome.isEmpty() || horasTrabalhadas.isEmpty() || valorHora.isEmpty()) {
             Toast.makeText(context, "Todos os campos devem ser preenchidos", Toast.LENGTH_LONG).show()
             true

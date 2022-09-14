@@ -4,51 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#A9A9A9"
+    android:background="@color/silver"
     tools:context=".CadastroFragment">
 
     <TextView
         android:id="@+id/cadastro"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/cadastro"
         android:textSize="@dimen/fonte_16"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/nome_e_sobrenome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nome_e_sobrenome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="@dimen/margem_16"
+        android:layout_marginEnd="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
         android:hint="Nome e sobrenome"
         android:textSize="@dimen/fonte_16"
+        app:layout_constraintBottom_toTopOf="@id/horas_trabalhadas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cadastro" />
 
     <EditText
         android:id="@+id/horas_trabalhadas"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:layout_marginStart="@dimen/margem_16"
+        android:layout_marginEnd="@dimen/margem_16"
         android:hint="Horas trabalhadas"
+        app:layout_constraintBottom_toTopOf="@id/valor_por_hora"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nome_e_sobrenome" />
+        app:layout_constraintTop_toBottomOf="@id/nome_e_sobrenome"
+        app:layout_goneMarginRight="@dimen/margem_16" />
 
     <EditText
         android:id="@+id/valor_por_hora"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margem_16"
         android:hint="Valor por hora"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@id/calcular_salario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/horas_trabalhadas" />
 
@@ -56,7 +65,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/calcular_salario"
-        android:layout_margin="16dp"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginRight="@dimen/margem_16"
         android:backgroundTint="#FFB74D"
         android:text="calcular salario"
         android:textAllCaps="true"

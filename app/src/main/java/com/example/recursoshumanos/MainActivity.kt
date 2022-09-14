@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity(), FragmentoClick {
 
         supportFragmentManager
             .beginTransaction()
-            .replace(binding.container.id, CadastroFragment())
+            .add(binding.container.id, CadastroFragment())
             .commit()
     }
 

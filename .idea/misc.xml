@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/carolina.queiroz/Documents/GitHub/Aula40/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/carolina.queiroz/Documents/GitHub/Aula40/app/src/main/res/layout/fragment_cadastro.xml" value="0.1" />
+        <entry key="..\:/Users/carolina.queiroz/Documents/GitHub/Aula40/app/src/main/res/layout/fragment_salario.xml" value="0.1" />
         <entry key="..\:/Users/christal.camillo/Desktop/Aula40/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/christal.camillo/Desktop/Aula40/app/src/main/res/layout/fragment_cadastro.xml" value="0.3104166666666667" />
         <entry key="..\:/Users/christal.camillo/Desktop/Aula40/app/src/main/res/layout/fragment_salario.xml" value="0.1" />
